@@ -5,10 +5,36 @@
  */
 package lab7_.kevinrodriguez;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Kevin
  */
-public class clase2 {
-    
+public class clase2 implements Serializable{
+    private String nombree;
+
+     private static final long SerialVersionUID=555L;
+
+    public clase2() {
+    }
+     
+     
+    public clase2(String nombree) {
+        this.nombree = nombree;
+    }
+
+    public String getNombree() {
+        return nombree;
+    }
+
+    public void setNombree(String nombree) {
+        this.nombree = nombree;
+    }
+
+    @Override
+    public String toString() {
+        return "clase1{" + "nombree=" + nombree + '}';
+    }
+
 }

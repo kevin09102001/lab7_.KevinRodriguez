@@ -24,6 +24,9 @@ public class naves extends Thread implements Serializable{
     private JProgressBar conbustiblemax;
     private JProgressBar tanquereserva;
 
+    
+     private static final long SerialVersionUID=777L;
+     
     public naves(String nombre, String identificador, int cant_personas, int tiempo, int astronautas, int aterrizaje, int velocidad, int distancia) {
         this.nombre = nombre;
         this.identificador = identificador;

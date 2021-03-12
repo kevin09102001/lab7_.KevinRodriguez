@@ -15,7 +15,7 @@ public class planetas implements Serializable{
      public String nombre,tipo;
      public int distancia,saturacion;
      
-     private static final long SerialVersionUID=888L;
+     private static final long SerialVersionUID=777L;
 
     public planetas(String nombre, String tipo, int distancia, int saturacion) {
         this.nombre = nombre;

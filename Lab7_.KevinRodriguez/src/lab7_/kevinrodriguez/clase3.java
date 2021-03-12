@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class clase3 implements Serializable{
      private String nombree;
 
-     private static final long SerialVersionUID=444L;
+     private static final long SerialVersionUID=555L;
 
     public clase3() {
     }
