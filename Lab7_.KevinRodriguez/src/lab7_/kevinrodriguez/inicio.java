@@ -73,6 +73,7 @@ public class inicio extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        MOSTRAR = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
@@ -92,6 +93,7 @@ public class inicio extends javax.swing.JFrame {
         velocidad = new javax.swing.JFormattedTextField();
         distancia = new javax.swing.JFormattedTextField();
         jButton5 = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
         nombrenave1 = new javax.swing.JTextField();
@@ -139,6 +141,8 @@ public class inicio extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        mostrar3 = new javax.swing.JLabel();
+        mosta = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
@@ -146,6 +150,16 @@ public class inicio extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         pgconbus = new javax.swing.JProgressBar();
         pgreserva = new javax.swing.JProgressBar();
+        piloto1 = new javax.swing.JComboBox<>();
+        piloto2 = new javax.swing.JComboBox<>();
+        piloto3 = new javax.swing.JComboBox<>();
+        navesi = new javax.swing.JComboBox<>();
+        planetasi = new javax.swing.JComboBox<>();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -198,9 +212,9 @@ public class inicio extends javax.swing.JFrame {
                         .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
-                .addGap(18, 18, 18)
+                .addGap(37, 37, 37)
                 .addComponent(contextura, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(251, 251, 251))
+                .addGap(493, 493, 493))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -242,19 +256,14 @@ public class inicio extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(contextura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(35, 35, 35)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7)
+                    .addComponent(contextura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
@@ -367,22 +376,6 @@ public class inicio extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel15)
-                        .addGap(27, 27, 27)
-                        .addComponent(titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addGap(18, 18, 18)
-                        .addComponent(nacional1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addGap(18, 18, 18)
-                        .addComponent(apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(18, 18, 18)
-                        .addComponent(astro, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -406,7 +399,28 @@ public class inicio extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel16)
                                 .addGap(18, 18, 18)
-                                .addComponent(contextura1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(contextura1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addGap(18, 18, 18)
+                                .addComponent(nacional1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addGap(18, 18, 18)
+                                .addComponent(apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addGap(18, 18, 18)
+                                .addComponent(astro, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addGap(18, 18, 18)
+                                .addComponent(MOSTRAR, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(38, 38, 38)
+                                .addComponent(titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(28, 28, 28))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(337, 337, 337)
@@ -445,15 +459,21 @@ public class inicio extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(misiones1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel14)
-                    .addComponent(nacional1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(56, 56, 56)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel15)
-                    .addComponent(titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel14)
+                            .addComponent(nacional1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(62, 62, 62)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(MOSTRAR, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(86, 86, 86)))
                 .addComponent(jButton2)
                 .addGap(92, 92, 92))
         );
@@ -496,60 +516,66 @@ public class inicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel49.setText("NAVE");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel49)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGap(52, 52, 52)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel33)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(identificado))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel32)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(nombrenave, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jLabel33)
+                                    .addComponent(jLabel34)
                                     .addGap(18, 18, 18)
-                                    .addComponent(identificado))
+                                    .addComponent(cant, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jLabel32)
+                                    .addComponent(jLabel35)
                                     .addGap(18, 18, 18)
-                                    .addComponent(nombrenave, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel34)
-                                .addGap(18, 18, 18)
-                                .addComponent(cant, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel35)
-                                .addGap(18, 18, 18)
-                                .addComponent(tiempo)))
-                        .addGap(92, 92, 92)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tiempo)))
+                            .addGap(92, 92, 92)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel37)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(aterriza))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel36)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(astronautas, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel38)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(velocidad)))
                                 .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jLabel37)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(aterriza))
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jLabel36)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(astronautas, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jLabel38)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(velocidad)))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel39)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(distancia, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(485, 485, 485)
-                        .addComponent(jButton5)))
+                                    .addComponent(jLabel39)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(distancia, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGap(485, 485, 485)
+                            .addComponent(jButton5))))
                 .addContainerGap(652, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(109, 109, 109)
+                .addGap(45, 45, 45)
+                .addComponent(jLabel49)
+                .addGap(48, 48, 48)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -886,15 +912,20 @@ public class inicio extends javax.swing.JFrame {
                                     .addGroup(jPanel11Layout.createSequentialGroup()
                                         .addComponent(jLabel25)
                                         .addGap(18, 18, 18)
-                                        .addComponent(tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(mostrar3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel11Layout.createSequentialGroup()
-                                        .addGap(82, 82, 82)
+                                        .addGap(1, 1, 1)
                                         .addComponent(jLabel26)
                                         .addGap(18, 18, 18)
-                                        .addComponent(saturacion1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(saturacion1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(mosta, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 212, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 342, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(384, 384, 384)
@@ -913,7 +944,8 @@ public class inicio extends javax.swing.JFrame {
                     .addComponent(jLabel23)
                     .addComponent(jLabel26)
                     .addComponent(saturacion1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nombrep1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombrep1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mosta, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
@@ -923,7 +955,8 @@ public class inicio extends javax.swing.JFrame {
                         .addGap(56, 56, 56)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel25)
-                            .addComponent(tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mostrar3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addComponent(jButton4)
@@ -980,15 +1013,40 @@ public class inicio extends javax.swing.JFrame {
         pgreserva.setValue(50);
         pgreserva.setStringPainted(true);
 
+        piloto1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                piloto1ItemStateChanged(evt);
+            }
+        });
+
+        piloto2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                piloto2ItemStateChanged(evt);
+            }
+        });
+
+        piloto3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                piloto3ItemStateChanged(evt);
+            }
+        });
+
+        jLabel50.setText("pilotos");
+
+        jLabel51.setText("nave");
+
+        jLabel52.setText("planeta");
+
+        jButton7.setText("iniciar");
+
+        jButton8.setText("detener");
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(431, 431, 431)
-                        .addComponent(jLabel28))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(127, 127, 127)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -997,23 +1055,74 @@ public class inicio extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(pgconbus, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pgreserva, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(516, Short.MAX_VALUE))
+                            .addComponent(pgreserva, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(piloto3, 0, 64, Short.MAX_VALUE)
+                            .addComponent(piloto2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(piloto1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel50)
+                                .addGap(12, 12, 12)))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGap(317, 317, 317)
+                                .addComponent(navesi, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(314, 314, 314)
+                                .addComponent(planetasi, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGap(337, 337, 337)
+                                .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel52)
+                                .addGap(14, 14, 14))))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(465, 465, 465)
+                        .addComponent(jLabel28))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(344, 344, 344)
+                        .addComponent(jButton7)
+                        .addGap(197, 197, 197)
+                        .addComponent(jButton8)))
+                .addContainerGap(328, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(33, 33, 33)
                 .addComponent(jLabel28)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(pgconbus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76)
+                .addGap(38, 38, 38)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel30)
-                    .addComponent(pgreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(189, 189, 189))
+                    .addComponent(jLabel50)
+                    .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel52))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(piloto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(navesi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(planetasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48)
+                .addComponent(piloto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(3, 3, 3)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(piloto3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(92, 92, 92)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel29)
+                            .addComponent(pgconbus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(81, 81, 81)
+                        .addComponent(jLabel30))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pgreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(84, 84, 84)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton7)
+                    .addComponent(jButton8))
+                .addGap(31, 31, 31))
         );
 
         tab.addTab("simulacion", jPanel10);
@@ -1069,8 +1178,54 @@ public class inicio extends javax.swing.JFrame {
             DefaultComboBoxModel modelo
                     = new DefaultComboBoxModel(
                             ap.getListaastronautas().toArray());
-           astro.setModel(modelo);
-            
+            astro.setModel(modelo);
+
+            admplanetas ap2 = new admplanetas("./planetas.cbm");
+            ap2.cargarArchivo();
+            DefaultComboBoxModel modelo1
+                    = new DefaultComboBoxModel(
+                            ap2.getListaplanetas().toArray());
+            complaneta.setModel(modelo1);
+
+            admnaves ap3 = new admnaves("./naves.cbm");
+            ap3.cargarArchivo();
+            DefaultComboBoxModel modelo2
+                    = new DefaultComboBoxModel(
+                            ap3.getlistanaves().toArray());
+            comnave.setModel(modelo2);
+
+        }
+        if (tab.getSelectedIndex() == 1) {
+            admastronautas ap = new admastronautas("./astronautas.cbm");
+            ap.cargarArchivo();
+            DefaultComboBoxModel modelo
+                    = new DefaultComboBoxModel(
+                            ap.getListaastronautas().toArray());
+            piloto1.setModel(modelo);
+        }
+        if (tab.getSelectedIndex() == 1) {
+            admastronautas ap = new admastronautas("./astronautas.cbm");
+            ap.cargarArchivo();
+            DefaultComboBoxModel modelo
+                    = new DefaultComboBoxModel(
+                            ap.getListaastronautas().toArray());
+            piloto2.setModel(modelo);
+        }
+        if (tab.getSelectedIndex() == 1) {
+            admastronautas ap = new admastronautas("./astronautas.cbm");
+            ap.cargarArchivo();
+            DefaultComboBoxModel modelo
+                    = new DefaultComboBoxModel(
+                            ap.getListaastronautas().toArray());
+            piloto3.setModel(modelo);
+        }
+        if (tab.getSelectedIndex() == 1) {
+            admnaves ap3 = new admnaves("./naves.cbm");
+            ap3.cargarArchivo();
+            DefaultComboBoxModel modelo2
+                    = new DefaultComboBoxModel(
+                            ap3.getlistanaves().toArray());
+            navesi.setModel(modelo2);
         }
         if (tab.getSelectedIndex() == 1) {
             admplanetas ap2 = new admplanetas("./planetas.cbm");
@@ -1078,7 +1233,16 @@ public class inicio extends javax.swing.JFrame {
             DefaultComboBoxModel modelo1
                     = new DefaultComboBoxModel(
                             ap2.getListaplanetas().toArray());
+            planetasi.setModel(modelo1);
+        }
+        /* if (tab.getSelectedIndex() == 1) {
+            admplanetas ap2 = new admplanetas("./planetas.cbm");
+            ap2.cargarArchivo();
+            DefaultComboBoxModel modelo1
+                    = new DefaultComboBoxModel(
+                            ap2.getListaplanetas().toArray());
             complaneta.setModel(modelo1);
+
         }
         if (tab.getSelectedIndex() == 1) {
             admnaves ap3 = new admnaves("./naves.cbm");
@@ -1088,10 +1252,9 @@ public class inicio extends javax.swing.JFrame {
                             ap3.getlistanaves().toArray());
             comnave.setModel(modelo2);
 
-        }
+        }*/
 
-        
-           
+
     }//GEN-LAST:event_tabStateChanged
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -1130,6 +1293,7 @@ public class inicio extends javax.swing.JFrame {
                 nombre1.setText(temp.getNombre());
                 apellido1.setText(temp.getApellido());
                 nacional1.setText(temp.getNacionalidad());
+                MOSTRAR.setText(temp.getTitulo());
                 contextura1.setText(temp.getContextura());
                 peso1.setText(Integer.toString(temp.getPeso()));
                 misiones1.setText(Integer.toString(temp.getCantidad_misiones()));
@@ -1204,7 +1368,8 @@ public class inicio extends javax.swing.JFrame {
             if (temp != null) {
                 nombrep1.setText(temp.getNombre());
                 distanciap1.setText(Integer.toString(temp.getDistancia()));
-
+                mostrar3.setText(temp.getTipo());
+                mosta.setText(Integer.toString(temp.getSaturacion()));
                 jTable2.setModel(new javax.swing.table.DefaultTableModel(
                         new Object[][]{},
                         new String[]{
@@ -1243,13 +1408,16 @@ public class inicio extends javax.swing.JFrame {
         plane1 temp = (plane1) modelo.getElementAt(pos2);
         temp.setNombre(nombrep1.getText());
         temp.setDistancia(Integer.parseInt(distanciap1.getText()));
-
+        temp.setTipo(tipo1.getSelectedItem().toString());
+        temp.setSaturacion(Integer.parseInt(saturacion1.getValue().toString()));
         complaneta.setModel(modelo);
 
         admplanetas ap = new admplanetas("./planetas.cbm");
         ap.cargarArchivo();
         ap.getListaplanetas().get(pos2).setNombre(nombrep1.getText());
         ap.getListaplanetas().get(pos2).setDistancia(Integer.parseInt(distanciap1.getText()));
+        ap.getListaplanetas().get(pos2).setTipo(tipo1.getSelectedItem().toString());
+        ap.getListaplanetas().get(pos2).setSaturacion(Integer.parseInt(saturacion1.getValue().toString()));
         ap.escribirArchivo();
         JOptionPane.showMessageDialog(this, "planeta Modificado exitosamente");
     }//GEN-LAST:event_jButton4MouseClicked
@@ -1344,10 +1512,151 @@ public class inicio extends javax.swing.JFrame {
         ap.getlistanaves().get(pos).setAstronautas(Integer.parseInt(astronautas1.getText()));
         ap.getlistanaves().get(pos).setVelocidad(Integer.parseInt(velocidad1.getText()));
         ap.getlistanaves().get(pos).setDistancia(Integer.parseInt(distancia.getText()));
-   
+
         ap.escribirArchivo();
         JOptionPane.showMessageDialog(this, "nave Modificado exitosamente");
     }//GEN-LAST:event_jButton6MouseClicked
+
+    private void piloto1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_piloto1ItemStateChanged
+        if (evt.getStateChange() == 1) {
+            naves1 temp = (naves1) comnave.getSelectedItem();
+            pos = astro.getSelectedIndex();
+            if (temp != null) {
+                nombrenave1.setText(temp.getNombre());
+                identificado1.setText(temp.getIdentificador());
+                cant1.setText(Integer.toString(temp.getCant_personas()));
+                tiempo1.setText(Integer.toString(temp.getTiempo()));
+                astronautas1.setText(Integer.toString(temp.getAstronautas()));
+                aterriza1.setText(Integer.toString(temp.getAterrizaje()));
+                velocidad1.setText(Integer.toString(temp.getVelocidad()));
+                distancia.setText(Integer.toString(temp.getDistancia()));
+                jTable1.setModel(new javax.swing.table.DefaultTableModel(
+                        new Object[][]{},
+                        new String[]{
+                            "nombre"
+                        }
+                ) {
+                    Class[] types = new Class[]{
+                        java.lang.String.class, java.lang.String.class
+                    };
+                    boolean[] canEdit = new boolean[]{
+                        false, false
+                    };
+
+                    public Class getColumnClass(int columnIndex) {
+                        return types[columnIndex];
+                    }
+
+                    public boolean isCellEditable(int rowIndex, int columnIndex) {
+                        return canEdit[columnIndex];
+                    }
+                });
+
+                for (clase2 t : temp.getClases()) {
+                    Object row[] = {t.getNombree()};
+                    DefaultTableModel m
+                            = (DefaultTableModel) jTable1.getModel();
+                    m.addRow(row);
+                    jTable1.setModel(m);
+                }//fin for
+
+            }//fin if
+        }//fin changed
+    }//GEN-LAST:event_piloto1ItemStateChanged
+
+    private void piloto2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_piloto2ItemStateChanged
+        if (evt.getStateChange() == 1) {
+            naves1 temp = (naves1) comnave.getSelectedItem();
+            pos = astro.getSelectedIndex();
+            if (temp != null) {
+                nombrenave1.setText(temp.getNombre());
+                identificado1.setText(temp.getIdentificador());
+                cant1.setText(Integer.toString(temp.getCant_personas()));
+                tiempo1.setText(Integer.toString(temp.getTiempo()));
+                astronautas1.setText(Integer.toString(temp.getAstronautas()));
+                aterriza1.setText(Integer.toString(temp.getAterrizaje()));
+                velocidad1.setText(Integer.toString(temp.getVelocidad()));
+                distancia.setText(Integer.toString(temp.getDistancia()));
+                jTable1.setModel(new javax.swing.table.DefaultTableModel(
+                        new Object[][]{},
+                        new String[]{
+                            "nombre"
+                        }
+                ) {
+                    Class[] types = new Class[]{
+                        java.lang.String.class, java.lang.String.class
+                    };
+                    boolean[] canEdit = new boolean[]{
+                        false, false
+                    };
+
+                    public Class getColumnClass(int columnIndex) {
+                        return types[columnIndex];
+                    }
+
+                    public boolean isCellEditable(int rowIndex, int columnIndex) {
+                        return canEdit[columnIndex];
+                    }
+                });
+
+                for (clase2 t : temp.getClases()) {
+                    Object row[] = {t.getNombree()};
+                    DefaultTableModel m
+                            = (DefaultTableModel) jTable1.getModel();
+                    m.addRow(row);
+                    jTable1.setModel(m);
+                }//fin for
+
+            }//fin if
+        }//fin changed
+    }//GEN-LAST:event_piloto2ItemStateChanged
+
+    private void piloto3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_piloto3ItemStateChanged
+        if (evt.getStateChange() == 1) {
+            naves1 temp = (naves1) comnave.getSelectedItem();
+            pos = astro.getSelectedIndex();
+            if (temp != null) {
+                nombrenave1.setText(temp.getNombre());
+                identificado1.setText(temp.getIdentificador());
+                cant1.setText(Integer.toString(temp.getCant_personas()));
+                tiempo1.setText(Integer.toString(temp.getTiempo()));
+                astronautas1.setText(Integer.toString(temp.getAstronautas()));
+                aterriza1.setText(Integer.toString(temp.getAterrizaje()));
+                velocidad1.setText(Integer.toString(temp.getVelocidad()));
+                distancia.setText(Integer.toString(temp.getDistancia()));
+                jTable1.setModel(new javax.swing.table.DefaultTableModel(
+                        new Object[][]{},
+                        new String[]{
+                            "nombre"
+                        }
+                ) {
+                    Class[] types = new Class[]{
+                        java.lang.String.class, java.lang.String.class
+                    };
+                    boolean[] canEdit = new boolean[]{
+                        false, false
+                    };
+
+                    public Class getColumnClass(int columnIndex) {
+                        return types[columnIndex];
+                    }
+
+                    public boolean isCellEditable(int rowIndex, int columnIndex) {
+                        return canEdit[columnIndex];
+                    }
+                });
+
+                for (clase2 t : temp.getClases()) {
+                    Object row[] = {t.getNombree()};
+                    DefaultTableModel m
+                            = (DefaultTableModel) jTable1.getModel();
+                    m.addRow(row);
+                    jTable1.setModel(m);
+                }//fin for
+
+            }//fin if
+        }//fin changed
+    }//GEN-LAST:event_piloto3ItemStateChanged
 
     /**
      * @param args the command line arguments
@@ -1385,6 +1694,7 @@ public class inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel MOSTRAR;
     private javax.swing.JTextField apellido;
     private javax.swing.JTextField apellido1;
     private javax.swing.JComboBox<String> astro;
@@ -1412,6 +1722,8 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1455,7 +1767,11 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1477,8 +1793,11 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JFormattedTextField misiones;
     private javax.swing.JFormattedTextField misiones1;
+    private javax.swing.JLabel mosta;
+    private javax.swing.JLabel mostrar3;
     private javax.swing.JTextField nacional;
     private javax.swing.JTextField nacional1;
+    private javax.swing.JComboBox<String> navesi;
     private javax.swing.JTextField nombre;
     private javax.swing.JTextField nombre1;
     private javax.swing.JTextField nombrenave;
@@ -1489,6 +1808,10 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField peso1;
     public javax.swing.JProgressBar pgconbus;
     public javax.swing.JProgressBar pgreserva;
+    private javax.swing.JComboBox<String> piloto1;
+    private javax.swing.JComboBox<String> piloto2;
+    private javax.swing.JComboBox<String> piloto3;
+    private javax.swing.JComboBox<String> planetasi;
     private javax.swing.JSpinner saturacion;
     private javax.swing.JSpinner saturacion1;
     private javax.swing.JTabbedPane tab;

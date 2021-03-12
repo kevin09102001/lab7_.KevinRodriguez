@@ -40,7 +40,7 @@ public class planetas implements Serializable{
         this.tipo = tipo;
     }
 
-    public int getDistancia() {
+   public int getDistancia() {
         return distancia;
     }
 
