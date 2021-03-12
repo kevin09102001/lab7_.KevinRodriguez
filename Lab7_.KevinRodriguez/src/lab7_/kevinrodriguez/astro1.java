@@ -28,7 +28,7 @@ public class astro1 extends astronautas {
 
     @Override
     public String toString() {
-        return "clases=" +nombre ;
+        return nombre ;
     }
       
       
