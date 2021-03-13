@@ -21,7 +21,7 @@ public class inicio extends javax.swing.JFrame {
     public inicio() {
         initComponents();
 
-        ha = new naves(this.velocidadc, this.pgconbus, this.pgreserva);
+        ha = new naves(velocidadc, pgconbus, pgreserva);
 
     }
 
@@ -170,6 +170,7 @@ public class inicio extends javax.swing.JFrame {
         cantv = new javax.swing.JSpinner();
         jLabel55 = new javax.swing.JLabel();
         dist = new javax.swing.JTextField();
+        jLabel56 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1037,6 +1038,8 @@ public class inicio extends javax.swing.JFrame {
 
         jLabel55.setText("Distancia");
 
+        jLabel56.setText("no pude hacer el hilo ya me quede en el lab fuck");
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -1081,11 +1084,13 @@ public class inicio extends javax.swing.JFrame {
                                 .addComponent(navesi, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(255, 255, 255)
                                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(planetasi, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel10Layout.createSequentialGroup()
                                         .addComponent(jLabel55)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(dist))
-                                    .addComponent(planetasi, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel56)
+                                            .addComponent(dist)))))))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(465, 465, 465)
                         .addComponent(jLabel28))
@@ -1094,7 +1099,7 @@ public class inicio extends javax.swing.JFrame {
                         .addComponent(jButton7)
                         .addGap(197, 197, 197)
                         .addComponent(jButton8)))
-                .addContainerGap(254, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1132,7 +1137,8 @@ public class inicio extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel29)
-                            .addComponent(pgconbus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(pgconbus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel56))
                         .addGap(81, 81, 81)
                         .addComponent(jLabel30))
                     .addComponent(pgreserva, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1149,7 +1155,7 @@ public class inicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tab, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(tab, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1219, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1531,10 +1537,10 @@ public class inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_piloto3ItemStateChanged
 
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
-        
-            ha.start();
 
-            ha.setAvanzar(true);
+        ha.start();
+
+        ha.setAvanzar(true);
 
     }//GEN-LAST:event_jButton7MouseClicked
 
@@ -1672,6 +1678,7 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

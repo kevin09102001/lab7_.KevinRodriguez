@@ -15,7 +15,7 @@ import javax.swing.JSpinner;
  *
  * @author Kevin
  */
-public class naves extends Thread implements Serializable {
+public class naves extends Thread implements Serializable  {
 
     public String nombre, identificador;
     public int cant_personas, tiempo, astronautas, aterrizaje, velocidad, distancia;
@@ -163,11 +163,7 @@ public class naves extends Thread implements Serializable {
                        d / (Integer.parseInt(
                                 consumo.getValue().toString()))
                 );
-                try {
-                    Thread.sleep(300);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(naves.class.getName()).log(Level.SEVERE, null, ex);
-                };
+                
             }
             try {
                 Thread.sleep(50);
