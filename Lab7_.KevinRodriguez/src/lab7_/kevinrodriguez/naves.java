@@ -15,18 +15,19 @@ import javax.swing.JSpinner;
  *
  * @author Kevin
  */
-public class naves extends Thread implements Serializable{
-    public String nombre,identificador;
-    public int cant_personas,tiempo,astronautas,aterrizaje,velocidad,distancia;
+public class naves extends Thread implements Serializable {
+
+    public String nombre, identificador;
+    public int cant_personas, tiempo, astronautas, aterrizaje, velocidad, distancia;
     private boolean avanzar;
     private boolean vive;
     private JSpinner consumo;
     private JProgressBar conbustiblemax;
     private JProgressBar tanquereserva;
-
     
-     private static final long SerialVersionUID=777L;
-     
+
+    private static final long SerialVersionUID = 777L;
+
     public naves(String nombre, String identificador, int cant_personas, int tiempo, int astronautas, int aterrizaje, int velocidad, int distancia) {
         this.nombre = nombre;
         this.identificador = identificador;
@@ -42,10 +43,9 @@ public class naves extends Thread implements Serializable{
         this.consumo = consumo;
         this.conbustiblemax = conbustiblemax;
         this.tanquereserva = tanquereserva;
-        avanzar=true;
-        vive=true;
+        avanzar = true;
+        vive = true;
     }
-    
 
     public String getNombre() {
         return nombre;
@@ -150,23 +150,24 @@ public class naves extends Thread implements Serializable{
     public void setTanquereserva(JProgressBar tanquereserva) {
         this.tanquereserva = tanquereserva;
     }
- @Override
+
+    @Override
     public void run() {
-         while (vive) {
+        while (vive) {
             if (avanzar) {
-               int d = 1;
-                if (distancia > 0) {
-                    d = distancia;
+                int d=1;
+                if (d>0) {
+                    d=this.distancia;
                 }
-                conbustiblemax.setValue(conbustiblemax.getMaximum()
-                        - d / (Integer.parseInt(
+                conbustiblemax.setValue(conbustiblemax.getMaximum()-
+                       d / (Integer.parseInt(
                                 consumo.getValue().toString()))
                 );
-                        try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-                        Logger.getLogger(naves.class.getName()).log(Level.SEVERE, null, ex);
-                    };
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(naves.class.getName()).log(Level.SEVERE, null, ex);
+                };
             }
             try {
                 Thread.sleep(50);
@@ -174,8 +175,5 @@ public class naves extends Thread implements Serializable{
             }
         }
     }
-    
-        
-    
-    
+
 }
